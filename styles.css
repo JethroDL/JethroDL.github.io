@@ -20,10 +20,16 @@ img {
     background-color: #b6b8bf; /* Grey */
     color: #ffffff;
 }
+.bg-grey a:hover{ 
+    color: #5847ac;
+}
 
 .bg-lgrey { 
     background-color: #d4d4d4; /* White */
     color: #333333;
+}
+.bg-lgrey a:hover{ 
+    color: #5847ac;
 }
 
 .bg-purple { 
