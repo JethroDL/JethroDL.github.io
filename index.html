@@ -4,65 +4,93 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="grt-cookies-consent.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 
-<!-- Navbar -->
-<?php
-include_once 'resources/navigation.php';
-?>
+<div class="grt-cookie"> 
+  <div class="grt-cookies-msg">
+    <p> We use cookies to ensure that we give you the best experience on our website. If you continue to use this site we will assume that you accept and understand our <a href="privacy.html">Privacy Policy</a>, and our <a href="tos.html">Terms of Service</a>.</p>
+  </div> 
+  <span class="grt-cookie-button">Accept</span>
+</div>
 
-<!-- Purple Section -->
+<!-- Navbar -->
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="index.html">Alison Moyet</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="bio.html">Bio</a></li>
+        <li><a href="albums.html">Albums</a></li>
+        <li><a href="req.html">Requirements</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Raspberry Section -->
 <div class="container-fluid bg-1 text-center">
-  <img src="resources/images/moyet1.jpeg" class="img-responsive img-circle margin" alt="Moyet" width="350" height="350">
-  <h3>"When you have a creative mind it doesn't stop going."</h3>
+  <img src="moyet1.jpeg" class="img-responsive img-circle margin" alt="Moyet" width="350" height="350">
+  <!-- image source: https://img.huffingtonpost.com/asset/5d02d1932400009d1790d5e1.jpeg?ops=scalefit_630_noupscale-->
+  <h3>"With all records, it's the starting out that is the difficult stage."</h3>
 </div>
 
 <!-- Grey Section -->
 <div class="container-fluid bg-2 text-center">
   <h3 class="margin">Bio</h3>
   <p>Click to find out more about Alison</p>
-  <a href="bio.php" class="btn btn-default btn-lg"> Learn more </a>
+  <a href="bio.html" class="btn btn-default btn-lg"> Learn more </a>
 </div>
 
 <!-- Black Section -->
 <div class="container-fluid bg-3 text-center">    
   <h3 class="margin">Albums</h3><br>
-  <h4 class="margin">Click on each album cover to reveal some lyrics.</h4>
   <div class="row">
     <div id="singlesSection" class="col-sm-4">
       <h2>Singles</h2>
       <p>Released in 1995, Singles is Moyet's first greatest hits album.</p>
-      <img id="indexSingles" src="resources/images/singles.jpg" class="img-responsive margin" alt="Album Cover - Singles" width="400" height="400">
-      <p id=indexSinglesLyrics></p>
+      <img id="indexSingles" src="singles.jpg" class="img-responsive margin" alt="Album Cover - Singles" width="400" height="400">
+      <!-- image source: https://upload.wikimedia.org/wikipedia/en/c/c6/Alison_Moyet_-_Singles.jpg-->
+      <p>Click the album cover to reveal some lyrics.</p>
     </div>
     <div id= "voiceSection" class="col-sm-4"> 
       <h2>Voice</h2>
       <p>Released in 2004, Voice is a collection of covers of classic songs designed to showcase Alison's voice.</p>
-      <img id="indexVoice" src="resources/images/voice.jpg" class="img-responsive margin" alt="Album Cover - Voice" width="400" height="400">
-      <p id=indexVoiceLyrics></p>
+      <img id="indexVoice" src="voice.jpg" class="img-responsive margin" alt="Album Cover - Voice" width="400" height="400">
+      <!-- image source: https://upload.wikimedia.org/wikipedia/en/f/f6/Alison_Moyet_-_Voice.jpg-->
+      <p>Click the album cover to reveal some lyrics.</p>
     </div>
     <div id="otherSection" class="col-sm-4"> 
       <h2>Other</h2>
       <p>Released in 2017, Other was Alison's first album of new songs since her 2013 album, The Minutes.</p>
-      <img id= "indexOther" src="resources/images/other.jpg" class="img-responsive margin" alt="Album Cover - Other" width="400" height="400">
-      <p id=indexOtherLyrics></p>
+      <img id= "indexOther" src="other.jpg" class="img-responsive margin" alt="Album Cover - Other" width="400" height="400">
+      <!-- image source: https://upload.wikimedia.org/wikipedia/en/6/64/Alison_Moyet_-_Other.jpg-->
+      <p>Click the album cover to reveal some lyrics.</p>
     </div>
   </div>
   <p>Click to find out more about Alison's albums</p>
-  <a href="albums.php" class="btn btn-default btn-lg"> Learn more </a>
+  <a href="albums.html" class="btn btn-default btn-lg"> Learn more </a>
 </div>
 
 <!-- Footer -->
 <footer class="container-fluid bg-4 text-center">
-  <p>CMP204 Unit 2 Coursework | Grant Anderson | 1900189</a></p> 
+  <p>CMP204 Unit 1 Coursework | Grant Anderson | 1900189</a></p> 
 </footer>
 
 <!-- JavaScript and jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="grt-cookie-consent.js"></script>
 <script src="scripts.js"></script>
 
 </body>
