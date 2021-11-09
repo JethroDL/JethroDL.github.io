@@ -1,5 +1,6 @@
 body {
-    font: 20px Calibri, sans-serif;
+    font-family: "Trebuchet MS";
+    font-size: 20px;
     line-height: 1.8;
     color: #f5f6f7;
     background-color: #333333;
@@ -16,22 +17,22 @@ img {
 .margin {margin-bottom: 45px;}
 
 .bg-1 { 
-    background-color: #8a0f42; /* Raspberry */
+    background-color: #5847ac; /* Purple */
     color: #ffffff;
 }
 
 .bg-2 { 
-    background-color: #333333; /* Grey */
-    color: #ffffff;
+    background-color: #b6b8bf; /* Grey */
+    color: #333333;
 }
 
 .bg-3 { 
     background-color: #000000; /* Black */
-    color: #8a0f42;
+    color: #5847ac;
 }
 
 .bg-4 { 
-    background-color: #e9ecf1; /* Grey White */
+    background-color: #ffffff; /*  White */
     color: #000000;
 }
 
